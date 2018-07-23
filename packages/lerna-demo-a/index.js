@@ -1,3 +1,3 @@
 const core = require("lerna-demo-core");
 
-console.log("lerna-demo-aaa");
+console.log("lerna-demo-a");
