@@ -1,1 +1,1 @@
-console.log("lerna-demo-core");
+console.log("lerna-demo-core1");
