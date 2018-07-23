@@ -4,7 +4,8 @@
   "version": "independent",
   "command": {
     "publish": {
-      "npmClient": "yarn"
+      "npmClient": "yarn",
+      "message": "chore(release): publish"
     }
   }
 }
