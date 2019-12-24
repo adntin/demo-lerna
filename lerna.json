@@ -1,11 +1,27 @@
 {
-  "lerna": "2.11.0",
-  "packages": ["packages/*"],
+  "lerna": "3.19.0",
   "version": "independent",
+  "npmClient": "yarn",
+  "useWorkspaces": true,
+  "packages": ["packages/*", "app"],
   "command": {
+    "init": {
+      "independent": true,
+      "exact": true
+    },
+    "create": {
+      "yes": false,
+      "esModule": true
+    },
+    "add": {
+      "exact": true
+    },
+    "version": {
+      "allowBranch": "master"
+    },
     "publish": {
-      "npmClient": "yarn",
-      "message": "chore(release): publish"
+      "allowBranch": "master",
+      "exact": true
     }
   }
 }

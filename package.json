@@ -1,5 +1,25 @@
 {
-	"devDependencies": {
-		"lerna": "^2.11.0"
-	}
+  "name": "demo-lerna",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/adntin/demo-lerna.git",
+  "author": "linbin <linbin@leedarson.com>",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "app"
+  ],
+  "scripts": {
+    "start": "cd app && yarn start",
+    "lk1": "bash ./link1.sh",
+    "lk2": "bash ./link2.sh",
+    "lerna:version:prerelease": "yarn lerna version --conventional-commits --conventional-prerelease",
+    "lerna:version:graduate": "yarn lerna version --conventional-commits --conventional-graduate",
+    "lerna:publish:prerelease": "yarn lerna:version:prerelease && yarn lerna publish from-package",
+    "lerna:publish:graduate": "yarn lerna:version:graduate && yarn lerna publish from-package"
+  },
+  "devDependencies": {
+    "lerna": "3.19.0"
+  }
 }

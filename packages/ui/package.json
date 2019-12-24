@@ -1,0 +1,34 @@
+{
+  "name": "@demo/ui",
+  "version": "1.0.0",
+  "description": "> TODO: description",
+  "author": "linbin <linbin@leedarson.com>",
+  "homepage": "https://github.com/adntin/demo-lerna#readme",
+  "license": "MIT",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "directories": {
+    "lib": "src",
+    "test": "__tests__"
+  },
+  "files": [
+    "src"
+  ],
+  "publishConfig": {
+    "registry": "https://registry.yarnpkg.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adntin/demo-lerna.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: run tests from root\" && exit 1"
+  },
+  "bugs": {
+    "url": "https://github.com/adntin/demo-lerna/issues"
+  },
+  "dependencies": {
+    "react": "16.12.0",
+    "react-dom": "16.12.0"
+  }
+}
